@@ -1,0 +1,311 @@
+/*定义全局样式*/
+h1 {
+    padding: 12px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+nav {
+    background: #ccc;
+    height: 50px;
+}
+
+body {
+    background: #ccc;
+}
+
+ul {
+    /*去掉ul的边距*/
+    margin: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+#banner {
+    background: transparent;
+    height: 700px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+
+/*, 表示平级 相当于&*/
+nav ul li, nav .logo {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+nav .logo {
+    float: left;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    /*居中*/
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;/*行内block*/
+    /*继承父元素高度*/
+    height: inherit;
+    color: #fff;
+}
+
+#banner .inner {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    /*posotion*/
+    position: relative;
+    top: 160px;
+}
+
+#banner .inner h1 {
+    margin: 0;
+    color: #fff;
+}
+
+#banner button {
+    padding: 14px 40px;
+}
+button {
+    border: none;
+    background: #089db0;
+    color: #eee;
+}
+
+#banner .inner .more {
+    margin-top: 280px;
+}
+
+.sub-heading {
+    line-height: 30px;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo a {
+    color: #fff;
+}
+/*content*/
+.green-section {
+    background: #089db0;
+    text-align: center;
+    color: #fff;
+    padding:100px 0;
+}
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.active {
+    border-bottom: 4px solid #fff;
+}
+
+.hr {
+    width:  100%;
+    height: 2px;
+    margin: 20px auto;
+}
+.sub-heading {
+    font-size: 18px;
+}
+
+.green-section .hr {
+    background: #098e9f;
+    width: 60%;
+}
+
+.icon-group {
+    margin-top: 60px;
+}
+.green-section .icon-group .icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #0d6f7c;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+
+/*section1*/
+.gray-section {
+    background: #252f34;
+    color: #fff;
+
+}
+.gray-section .img-section {
+    width: 45%;
+}
+
+.img-section img {
+    width: 100%; /*约束图片宽度 和父元素看齐*/
+}
+.gray-section .text-section {
+    width: 55%;
+}
+
+/* > 向下一集 */
+.article-preview > div {
+    float: left;
+    font-size: 0; /*Fix 因为字体引起的缝隙*/
+}
+
+.article-preview:nth-child(odd) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/*添加类 来清除浮动*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*清除父级元素的样式*/
+.article-preview:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.text-section {
+    position: relative;
+    top: 68px;
+    left: 50px;
+}
+
+.text-section h2 {
+    margin-bottom: 20px;
+}
+
+.text-section .sub-heading {
+    font-size: 22px;
+    margin-top: 0;
+}
+.text-section p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.text-section > * {
+    max-width: 90%;
+}
+
+/*purple section*/
+.purple-section {
+    padding: 80px;
+    background: #3f3965;
+    color: #fff;
+}
+
+.purple-section .header-wrapper {
+    text-align: center;
+}
+
+.purple-section .hr {
+    background: #373259;
+    width: 40%;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px solid white;*/
+}
+
+.card-group {
+    width: 80%;
+    margin: auto;
+}
+
+.card p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card:first-child {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.card:nth-child(2) {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(3) {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(4) {
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.card:nth-child(5) {
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.card:nth-child(6) {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+/*footer*/
+footer {
+    background: #333;
+    color: #fff;
+    min-height: 200px;
+    text-align: center;
+}
+/*ul 有一个class 叫做share-group 注意这里 . 号的位置*/
+ul.share-group {
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.share-group li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.copy {
+    padding-bottom: 20px;
+}
+
+.main-warpper {
+    background: #444 url(../img/img8.jpg);
+    /*不能动*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
